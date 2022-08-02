@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.left img{
+    height: 40px;
+    width: 50px;
+}
+
+header{
+    position:sticky;
+    top: 0;
+    background-color: white;
+    margin: auto;
+    height: 60px;
+    box-shadow: rgba(0, 0, 0, .35) 0px 5px 10px;
+}
+ 
+@media (max-width: 550px){
+    header{
+        background-color: red;
+        height: 120px;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .right{
+        flex-direction: column;
+    }
+    .rightBox{
+        display: flex;
+        margin: 12px;
+    }
+}
+.container{
+    padding: 0 10px;
+    /* margin: auto; */
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0 12px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.section1{
+    background: #f8f5f5;
+    /* height: 1000px; */
+}
+
+.search{
+    width: 34vw;
+    border: 0.5px solid grey;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: rgb(238, 238, 246);
+}
+
+.homeImg{
+    width: 95vw;
+    margin: 10px 0px;
+    height: 70vh;
+}
+
+
+.itemImg{
+    width: 25vw;
+    margin: auto;
+    height: 25vh;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+
+}
